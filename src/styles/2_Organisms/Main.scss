@@ -1,0 +1,72 @@
+.Main {
+  width: 100%;
+  .ProjectCard {
+    display: block;
+    height: 200px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 0px #00000014;
+    position: relative;
+    cursor: pointer;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+
+    &.FAC {
+      background-image: url("../../assets/pages/fac/cover.png");
+      background-color: #90a56d;
+      h3 {
+        color: #ffffff;
+      }
+    }
+    &.frogs {
+      background-image: url("../../assets/pages/frogs/cover.png");
+      background-color: #90a56d;
+    }
+    &.hogwarts {
+      background-image: url("../../assets/pages/hogwarts/cover.png");
+      background-color: #e2d3a8;
+    }
+    &.village {
+      background-image: url("../../assets/pages/vill/cover.png");
+      background-color: #b4bcaa;
+    }
+    &.fysci {
+      background-image: url("../../assets/pages/fysci/cover.png");
+      background-color: #f3f3f3;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      h3 {
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 30px;
+      }
+      .tagCollection {
+        margin-top: 15px;
+        p {
+          padding: 3px 20px;
+          width: auto;
+          border-radius: 7px;
+          background-color: #ffd66e;
+          & + p {
+            margin-left: 5px;
+          }
+        }
+      }
+      position: absolute;
+      left: 30px;
+      bottom: 35px;
+    }
+
+    & + .ProjectCard {
+      margin-top: 40px;
+    }
+
+    &:hover {
+      box-shadow: 0px 0px 20px 0px #00000050;
+    }
+  }
+}

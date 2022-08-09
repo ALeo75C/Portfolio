@@ -1,0 +1,109 @@
+.Project {
+  width: 100%;
+  .head {
+    .header {
+      position: relative;
+      .back {
+        position: absolute;
+        top: 5px;
+        left: -70px;
+        svg {
+          cursor: pointer;
+          width: 41px;
+          height: 44px;
+        }
+      }
+      h1 {
+        font-size: 52px;
+        margin-bottom: 60px;
+      }
+    }
+    .info {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      p {
+        width: 60%;
+        line-height: 140%;
+      }
+      .tags {
+        text-align: right;
+        .tagsBlock {
+          width: 80%;
+          margin-top: -10px;
+          p {
+            width: 100%;
+            text-align: right;
+            line-height: normal;
+            margin-bottom: 7px;
+          }
+          .tagCollection {
+            text-align: right;
+            width: 100%;
+            .tag {
+              margin-top: 10px;
+              margin-bottom: 0;
+              width: auto;
+              display: inline-block;
+              padding: 3px 20px;
+              border-radius: 7px;
+              background-color: $main;
+
+              & + .tag {
+                margin-left: 5px;
+              }
+            }
+            a + a {
+              margin-top: 5px;
+            }
+          }
+          & + .tagsBlock {
+            margin-top: 30px;
+          }
+        }
+      }
+      .linksCollection {
+        margin-top: 40px;
+        text-align: end;
+      }
+    }
+  }
+  .works {
+    width: 100%;
+    margin-top: 65px;
+    h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+    h3 {
+      font-size: 25px;
+      margin-bottom: 15px;
+
+      & + img {
+        margin-top: 15px;
+      }
+    }
+    img {
+      width: 100%;
+      height: auto;
+      box-shadow: 0px 0px 20px 0px #00000014;
+      border-radius: 15px;
+      object-fit: cover;
+      background-color: $gray;
+      & + img {
+        margin-top: 30px;
+      }
+      & + h2 {
+        margin-top: 40px;
+      }
+      & + h3 {
+        margin-top: 50px;
+      }
+    }
+  }
+  // &.FAC {
+  //   background-color: #222127;
+  //   color: $white;
+  // }
+}

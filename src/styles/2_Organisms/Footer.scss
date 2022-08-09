@@ -1,0 +1,35 @@
+.Footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 90px;
+  div {
+    width: auto;
+    display: flex;
+    align-items: center;
+    p {
+      margin: 0 20px;
+    }
+    a {
+      text-decoration: none;
+      svg {
+        width: 40px;
+        height: 40px;
+        path {
+          fill: $black;
+        }
+        &:hover path {
+          fill: $main;
+        }
+      }
+    }
+    p + p {
+      margin-left: 20px;
+    }
+
+    & + div {
+      margin-top: 18px;
+    }
+  }
+}
