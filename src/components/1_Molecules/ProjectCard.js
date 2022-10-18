@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { tags } from "../../data";
 
-const renderTag = (tags) => {
+const renderTag = (projectTags) => {
   // const tags = this.props.data.tag;
   let tagsItems = [];
-  tags.forEach((tag, i) => {
-    tagsItems.push(<p>{tag}</p>);
+  projectTags.forEach((tag, i) => {
+    tagsItems.push(<p className={"i" + tags.indexOf(tag)}>{tag}</p>);
   });
   return <div className="tagCollection">{tagsItems}</div>;
 };

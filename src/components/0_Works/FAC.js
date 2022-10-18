@@ -9,13 +9,13 @@ import im06 from "../../assets/pages/fac/14.png";
 export default function FAC() {
   return (
     <div className="works">
-      <img src={im00} alt="Референс" />
-      <img src={im06} alt="Референс" />
       <img src={im01} alt="Референс" />
       <img src={im05} alt="Референс" />
       <img src={im02} alt="Референс" />
       <img src={im03} alt="Референс" />
       <img src={im04} alt="Референс" />
+      <img src={im06} alt="Референс" />
+      <img src={im00} alt="Референс" />
     </div>
   );
 }

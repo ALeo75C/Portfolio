@@ -1,10 +1,85 @@
 .Main {
   width: 100%;
+  .Filter {
+    width: 100%;
+    height: 20px;
+    margin: 90px 0 60px;
+    display: flex;
+    justify-content: center;
+    div {
+      width: auto;
+      position: relative;
+      &.tag {
+        &.false {
+          padding-right: 24px;
+        }
+        &.true {
+          .content svg {
+            display: block;
+          }
+          ._color {
+            &.i0 {
+              background-color: $ping;
+            }
+            &.i1 {
+              background-color: $orange;
+            }
+            &.i2 {
+              background-color: $green;
+            }
+          }
+        }
+        &:hover {
+          cursor: pointer;
+        }
+        & + .tag {
+          margin-left: 70px;
+        }
+        .content {
+          z-index: 2;
+          padding: 0 3px 0 8px;
+          display: flex;
+          align-items: center;
+          p {
+            user-select: none;
+            margin-right: 10px;
+            width: auto;
+            font-size: 21px;
+          }
+          svg {
+            opacity: 0.3;
+            display: none;
+          }
+        }
+        ._color {
+          top: 0;
+          left: 0;
+          position: absolute;
+          z-index: 1;
+          width: 100%;
+          height: 100%;
+          background-color: white;
+          border-radius: 1px;
+
+          &.i0 {
+            transform: rotate(2.28deg);
+          }
+          &.i1 {
+            transform: rotate(-2.78deg);
+          }
+          &.i2 {
+            transform: rotate(2.14deg);
+          }
+        }
+      }
+    }
+  }
+
   .ProjectCard {
     display: block;
     height: 200px;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 2px;
     box-shadow: 0px 0px 20px 0px #00000014;
     position: relative;
     cursor: pointer;
@@ -12,7 +87,7 @@
     background-size: auto;
     background-repeat: no-repeat;
 
-    &.FAC {
+    &.fac {
       background-image: url("../../assets/pages/fac/cover.png");
       background-color: #90a56d;
       h3 {
@@ -49,8 +124,20 @@
         p {
           padding: 3px 20px;
           width: auto;
-          border-radius: 7px;
-          background-color: #ffd66e;
+          border-radius: 1px;
+          transform: rotate(2deg);
+          &.i0 {
+            background-color: $ping;
+            transform: rotate(2.28deg);
+          }
+          &.i1 {
+            background-color: $orange;
+            transform: rotate(-2.78deg);
+          }
+          &.i2 {
+            background-color: $green;
+            transform: rotate(2.14deg);
+          }
           & + p {
             margin-left: 5px;
           }

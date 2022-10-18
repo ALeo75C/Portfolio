@@ -1,7 +1,7 @@
 import { ReactComponent as Back } from "../../assets/icons/back.svg";
 import { Link, useParams } from "react-router-dom";
 
-import { projects } from "../../data";
+import { projects, tags } from "../../data";
 
 import Footer from "../2_Organisms/Footer";
 
@@ -11,11 +11,13 @@ import Village from "../0_Works/Village";
 import FAC from "../0_Works/FAC";
 import Fysci from "../0_Works/Fysci";
 
-const renderTagCollections = (tags, tecnology) => {
-  let tagsCollectionItems = [];
+import { FiChevronLeft } from "react-icons/fi";
+
+const renderTagCollections = (projectTags, tecnology) => {
+  let projectTagsCollectionItems = [];
   let tecnologyCollectionItems = [];
-  tags.forEach((tag, i) => {
-    tagsCollectionItems.push(<div className="tag">{tag}</div>);
+  projectTags.forEach((tag, i) => {
+    projectTagsCollectionItems.push(<div className="tag">{tag}</div>);
   });
   tecnology.forEach((tag, i) => {
     tecnologyCollectionItems.push(<div className="tag">{tag}</div>);
@@ -23,7 +25,7 @@ const renderTagCollections = (tags, tecnology) => {
   return (
     <div className="tags">
       <div className="tagsBlock">
-        <div className="tagCollection">{tagsCollectionItems}</div>
+        <div className="tagCollection">{projectTagsCollectionItems}</div>
       </div>
       <div className="tagsBlock">
         <p>Технологии</p>
@@ -50,7 +52,7 @@ const renderImages = (id) => {
       return <Hogwarts />;
     case "village":
       return <Village />;
-    case "FAC":
+    case "fac":
       return <FAC />;
     case "fysci":
       return <Fysci />;
@@ -61,15 +63,21 @@ const renderImages = (id) => {
 
 const ProjectCard = (props) => {
   const project = projects[useParams().projectId];
-  console.log(projects);
+  console.log(tags.indexOf(project.tag[0]));
+  // project.theme ? this.props.changeTheme(project.theme) : "";
   return (
-    <div className={"Project " + project.id}>
+    <div
+      className={"Project " + project.id + " i" + tags.indexOf(project.tag[0])}
+    >
       <div className="head">
         <div className="header">
-          <Link to="/" className="back">
-            <Back />
-          </Link>
-          <h1>{project.title}</h1>
+          <div className="content">
+            <Link to="/" className="back">
+              <FiChevronLeft />
+            </Link>
+            <h1>{project.title}</h1>
+          </div>
+          <div className="_color"></div>
         </div>
         <div className="info">
           <p>{project.text}</p>

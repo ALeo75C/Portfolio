@@ -1,21 +1,48 @@
 .Project {
   width: 100%;
+  margin-top: 60px;
+  &.i0 ._color {
+    background-color: $ping;
+  }
+  &.i1 ._color {
+    background-color: $orange;
+  }
+  &.i2 ._color {
+    background-color: $green;
+  }
   .head {
     .header {
+      width: auto;
       position: relative;
-      .back {
-        position: absolute;
-        top: 5px;
-        left: -70px;
-        svg {
-          cursor: pointer;
-          width: 41px;
-          height: 44px;
+      .content {
+        z-index: 10;
+        position: inherit;
+        .back {
+          position: absolute;
+          top: 5px;
+          left: -70px;
+          z-index: 10;
+          svg {
+            cursor: pointer;
+            width: 41px;
+            height: 44px;
+          }
+        }
+        h1 {
+          display: block;
+          font-size: 52px;
+          margin-bottom: 60px;
         }
       }
-      h1 {
-        font-size: 52px;
-        margin-bottom: 60px;
+      ._color {
+        z-index: 0;
+        position: absolute;
+        // background-color: $main-color;
+        width: calc(100% + 82px);
+        height: 48%;
+        transform: rotate(-1.5deg);
+        top: 0;
+        left: -63px;
       }
     }
     .info {
@@ -23,7 +50,8 @@
       justify-content: space-between;
       width: 100%;
       p {
-        width: 60%;
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 100%;
         line-height: 140%;
       }
       .tags {
@@ -46,8 +74,11 @@
               width: auto;
               display: inline-block;
               padding: 3px 20px;
-              border-radius: 7px;
+              border-radius: 1px;
               background-color: $main;
+              &:nth-of-type(2n + 1) {
+                transform: rotate(1deg);
+              }
 
               & + .tag {
                 margin-left: 5px;
@@ -83,12 +114,20 @@
       & + img {
         margin-top: 15px;
       }
+      &::before,
+      &::after {
+        content: "—";
+        width: 10px;
+        height: 20px;
+        color: blue;
+        margin: 0 10px;
+      }
     }
     img {
       width: 100%;
       height: auto;
       box-shadow: 0px 0px 20px 0px #00000014;
-      border-radius: 15px;
+      border-radius: 3px;
       object-fit: cover;
       background-color: $gray;
       & + img {
@@ -98,7 +137,7 @@
         margin-top: 40px;
       }
       & + h3 {
-        margin-top: 50px;
+        margin-top: 40px;
       }
     }
   }
