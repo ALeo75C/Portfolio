@@ -148,7 +148,4 @@ export const projects = {
     tecnology: [tecnology[6]],
     links: [],
   },
-  // сделать хедер
-  // сделать смену тем
-  //добавить проекты :Merea, CrowSwap, ShaclesofBliid
 };

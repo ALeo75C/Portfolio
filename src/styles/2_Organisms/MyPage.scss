@@ -3,7 +3,7 @@
   .Info {
     display: flex;
     height: 300px;
-    .Content {
+    .ul {
       background-color: rgba(255, 255, 255, 0.7);
       width: 50%;
       h1 {
@@ -14,6 +14,10 @@
         p {
           font-size: 22px;
           margin-bottom: 12px;
+          span {
+            width: auto;
+            margin-right: 10px;
+          }
         }
       }
     }
@@ -25,28 +29,24 @@
       background-color: $ping;
     }
   }
-  .Icons {
-    padding: 50px 0;
-    width: 100%;
+  .Content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    svg {
-      width: 80px;
-      height: 80px;
+    margin-top: 50px;
+    p {
+      font-size: 19px;
+      span {
+        width: auto;
+        font-weight: bold;
+      }
     }
-  }
-  .About {
-    width: 100%;
-    padding: 75px 0;
-  }
-  .SkillsAndWork {
-    display: flex;
-    .Skills {
-      .Skill {
-        background-color: $ping;
+    .Left {
+      width: 55%;
+      .About {
+        width: 100%;
       }
       .Work {
+        margin-top: 50px;
         h3 {
           font-weight: bold;
         }
@@ -54,6 +54,52 @@
           margin-top: 10px;
         }
         p {
+        }
+      }
+    }
+    .Rigth {
+      width: 35%;
+      .Icons {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        svg {
+          width: 50px;
+          height: 80px;
+        }
+      }
+      .Skills {
+        background-color: white;
+        padding: 5px 3px;
+        .Skill {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px;
+          &:nth-of-type(2n + 1) .scale {
+            transform: rotate(1deg);
+          }
+          p {
+            // font-size: 15px;
+            // font-weight: lighter;
+            width: 95px;
+          }
+          .scale {
+            box-shadow: 2px 2px 5px 2px #00000014;
+            width: 50%;
+            height: 19px;
+            background-color: white;
+            position: relative;
+            border-radius: 2px;
+
+            .value {
+              border-radius: inherit;
+              position: absolute;
+              background-color: $green;
+              height: 100%;
+            }
+          }
         }
       }
     }
