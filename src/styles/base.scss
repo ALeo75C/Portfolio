@@ -85,6 +85,7 @@ body {
           left: 25px;
           h3 {
             width: 100%;
+            line-height: 110%;
           }
           .tagCollection {
             width: min-content;
@@ -97,6 +98,9 @@ body {
               // left: 10px;
             }
           }
+        }
+        & + .ProjectCard {
+          margin-top: 20px;
         }
       }
     }
