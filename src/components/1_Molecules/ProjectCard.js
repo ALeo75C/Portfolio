@@ -6,7 +6,11 @@ const renderTag = (projectTags) => {
   // const tags = this.props.data.tag;
   let tagsItems = [];
   projectTags.forEach((tag, i) => {
-    tagsItems.push(<p className={"i" + tags.indexOf(tag)}>{tag}</p>);
+    tagsItems.push(
+      <p className={"i" + tags.indexOf(tag)} key={i}>
+        {tag}
+      </p>
+    );
   });
   return <div className="tagCollection">{tagsItems}</div>;
 };

@@ -8,6 +8,11 @@
     width: auto;
     display: flex;
     position: relative;
+    &.left {
+      a:hover {
+        background-color: $orange;
+      }
+    }
     ._color {
       margin: 0;
       position: absolute;

@@ -43,5 +43,186 @@ body {
 @media (max-width: 1024px) {
   body {
     width: 80%;
+
+    .Project {
+      .Header .content {
+        display: flex;
+        .back {
+          position: initial;
+          margin-right: 10px;
+          margin-left: -40px;
+        }
+        h1 {
+          font-size: 46px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    margin: 60px auto 40px;
+    .Main {
+      .Filter {
+        margin: 50px 0 40px;
+        div.tag {
+          &.false {
+            padding-right: 0;
+          }
+          .content p {
+            font-size: 18px;
+          }
+          & + .tag {
+            margin-left: 30px;
+          }
+        }
+      }
+      .ProjectCard {
+        .content {
+          top: 30px;
+          bottom: auto;
+          left: 25px;
+          h3 {
+            width: 80%;
+          }
+          .tagCollection {
+            width: min-content;
+            p + p {
+              margin-left: -2px;
+              margin-top: 10px;
+              // position: absolute;
+              // bottom: auto;
+              // top: 60px;
+              // left: 10px;
+            }
+          }
+        }
+      }
+    }
+    .Footer {
+      bottom: 50px;
+      margin-top: 40px;
+    }
+    .Project {
+      .head {
+        .header .content {
+          display: flex;
+          .back {
+            position: initial;
+            margin-right: 10px;
+            margin-left: -40px;
+            width: auto;
+          }
+          h1 {
+            font-size: 46px;
+          }
+        }
+        .info {
+          margin-top: -20px;
+          flex-direction: column-reverse;
+          justify-content: flex-start;
+          p:first-of-type {
+            margin-top: 60px;
+          }
+          .tags {
+            text-align: left;
+            .tagsBlock {
+              width: 100%;
+              p {
+                text-align: left;
+                margin-top: 0;
+              }
+              .tagCollection {
+                text-align: left;
+                .tag + .tag {
+                  margin-left: 15px;
+                }
+              }
+            }
+          }
+          .linksCollection {
+            margin-top: 20px;
+            text-align: start;
+            display: flex;
+            flex-wrap: wrap;
+            a {
+              margin-top: 20px;
+              width: auto;
+              & + a {
+                margin-left: 20px;
+              }
+            }
+          }
+        }
+      }
+      .works {
+        h2 {
+          font-size: 26px;
+        }
+        h3 {
+          font-size: 20px;
+          &::before {
+            width: 5px;
+            height: 10px;
+            color: blue;
+            margin: 0 10px 0 0;
+          }
+        }
+        img {
+          width: calc(100% + 120px);
+          margin-left: -60px;
+          border-radius: 0;
+          & + img {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    .MyPage {
+      .Info {
+        display: block;
+        height: auto;
+        .ul {
+          width: 100%;
+          h1 {
+            font-size: 25px;
+          }
+          .Points p {
+            font-size: 20px;
+          }
+        }
+        .Photo {
+          display: none;
+        }
+      }
+      .Content {
+        display: block;
+        margin-top: 30px;
+        p {
+          line-height: 115%;
+        }
+        .Left {
+          width: 100%;
+          .Work {
+            margin-top: 40px;
+          }
+        }
+        .Rigth {
+          margin-top: 40px;
+          width: 100%;
+          .Skills {
+            .Skill:first-of-type {
+              margin-top: 25px;
+            }
+            &::before {
+              content: "Навыки";
+              font-weight: bold;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
   }
 }

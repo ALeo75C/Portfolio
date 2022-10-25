@@ -10,7 +10,7 @@ const renderTags = (active, action) => {
   tags.forEach((tag, i) => {
     const classNames = "tag " + active.includes(tag);
     tagsItems.push(
-      <div className={classNames} onClick={() => action(tag)}>
+      <div className={classNames} onClick={() => action(tag)} key={i}>
         <div className="content">
           <p>{tag}</p> <Close />
         </div>

@@ -37,11 +37,12 @@ const renderTagCollections = (projectTags, tecnology) => {
 
 // prettier-ignore
 const renderLinks = (links) => {
+  console.log(links.length);
   let linksItems = []
   links.forEach((link, i) => {
     linksItems.push(<a target="_blank" href={link.url}>{link.type}</a>)
   });
-  return <div className='linksCollection'>{linksItems}</div>
+  return links.length > 0 ? <div className='linksCollection'>{linksItems}</div> : ''
 };
 
 const renderImages = (id) => {
@@ -63,7 +64,6 @@ const renderImages = (id) => {
 
 const ProjectCard = (props) => {
   const project = projects[useParams().projectId];
-  console.log(tags.indexOf(project.tag[0]));
   // project.theme ? this.props.changeTheme(project.theme) : "";
   return (
     <div
@@ -72,7 +72,7 @@ const ProjectCard = (props) => {
       <div className="head">
         <div className="header">
           <div className="content">
-            <Link to="/" className="back">
+            <Link to="/Portfolio" className="back">
               <FiChevronLeft />
             </Link>
             <h1>{project.title}</h1>

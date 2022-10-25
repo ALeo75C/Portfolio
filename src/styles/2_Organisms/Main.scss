@@ -76,7 +76,7 @@
   }
 
   .ProjectCard {
-    display: block;
+    // display: block;
     height: 200px;
     width: 100%;
     border-radius: 2px;
@@ -112,15 +112,19 @@
     }
 
     .content {
-      display: flex;
-      flex-direction: column;
+      // display: flex;
+      // flex-direction: column;
+      position: absolute;
+      left: 40px;
+      bottom: 40px;
       h3 {
         font-weight: 300;
         font-size: 25px;
         line-height: 30px;
       }
       .tagCollection {
-        margin-top: 15px;
+        margin-left: -8px;
+        margin-top: 20px;
         p {
           padding: 3px 20px;
           width: auto;
@@ -143,9 +147,8 @@
           }
         }
       }
-      position: absolute;
-      left: 30px;
-      bottom: 35px;
+      // left: 30px;
+      // bottom: 35px;
     }
 
     & + .ProjectCard {

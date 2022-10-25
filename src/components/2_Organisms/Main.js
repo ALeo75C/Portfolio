@@ -31,28 +31,18 @@ const renderCards = (data) => {
   return projectsItems;
 };
 
+// <div className="Main">
+//   // <Filter
+//   //   activeTags={props.activeTags}
+//   //   onClick={props.changeActiveTags}
+//   // />
+// </div>
+// <Outlet />
 export default function Main(props) {
   return (
-    <>
-      <div className="Main">
-        <Filter
-          activeTags={props.activeTags}
-          onClick={props.changeActiveTags}
-        />
-        {renderCards(props)}
-      </div>
-      <Outlet />
-    </>
+    <div className="Main">
+      <Filter activeTags={props.activeTags} onClick={props.changeActiveTags} />
+      {renderCards(props)}
+    </div>
   );
 }
-// <div className="Main">
-//
-// </div>
-// export default function Main() {
-//   return (
-//
-//       <h1>LOLOLO</h1>
-//       <Footer />
-//     </div>
-//   );
-// }

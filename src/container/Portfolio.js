@@ -51,13 +51,23 @@ export default class Portfolio extends React.Component {
   // <Router>
   render() {
     // this.changeTheme("white");
+    // <Route
+    //   path="/"
+    //   element={
+    //     <Main
+    //       projects={this.state.projects}
+    //       activeTags={this.state.activeTags}
+    //       changeActiveTags={this.changeActiveTags}
+    //     />
+    //   }
+    // />
     return (
       <div className="Portfolio">
         <Header />
         <ScrollToTop>
           <Routes>
             <Route
-              path="/"
+              path="/Portfolio"
               element={
                 <Main
                   projects={this.state.projects}
@@ -67,10 +77,10 @@ export default class Portfolio extends React.Component {
               }
             />
             <Route
-              path=":projectId"
+              path="/Portfolio/:projectId"
               element={<ProjectPage changeTheme={this.changeTheme} />}
             />
-            <Route path="/lError_403" element={<MyPage />} />
+            <Route path="/Portfolio/lError_403" element={<MyPage />} />
           </Routes>
         </ScrollToTop>
         <TopBottom />
@@ -90,11 +100,3 @@ export default class Portfolio extends React.Component {
   //   );
   // }
 }
-// export default function Main() {
-//   return (
-//     <div className="Main">
-//       <h1>LOLOLO</h1>
-//       <Footer />
-//     </div>
-//   );
-// }
