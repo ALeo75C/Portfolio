@@ -37,7 +37,6 @@ const renderTagCollections = (projectTags, tecnology) => {
 
 // prettier-ignore
 const renderLinks = (links) => {
-  console.log(links.length);
   let linksItems = []
   links.forEach((link, i) => {
     linksItems.push(<a target="_blank" href={link.url}>{link.type}</a>)
@@ -80,7 +79,7 @@ const ProjectCard = (props) => {
           <div className="_color"></div>
         </div>
         <div className="info">
-          <p>{project.text}</p>
+          <p>{project.text[0].replace(/[N]/g, "\u00A0")}</p>
           <div>
             {renderTagCollections(project.tag, project.tecnology)}
             {renderLinks(project.links)}

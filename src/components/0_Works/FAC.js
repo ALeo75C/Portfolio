@@ -6,9 +6,30 @@ import im04 from "../../assets/pages/fac/12.png";
 import im05 from "../../assets/pages/fac/13.png";
 import im06 from "../../assets/pages/fac/14.png";
 
+import { IoChevronDownOutline } from "react-icons/io5";
+
+import { projects } from "../../data.js";
+
+const switchView = () => {
+  const info = document.body.getElementsByClassName("info")[1];
+  info.className.split(" ")[1]
+    ? info.classList.remove("hidden")
+    : info.classList.add("hidden");
+  console.log(info.className);
+};
+
 export default function FAC() {
   return (
     <div className="works">
+      <div className="moreInformation">
+        <div className="open" onClick={switchView}>
+          Подробнее <IoChevronDownOutline />
+        </div>
+        <div className="info hidden">
+          <p>{projects.fac.text[1].replace(/[N]/g, "\u00A0")}</p>
+          <p>{projects.fac.text[2].replace(/[N]/g, "\u00A0")}</p>
+        </div>
+      </div>
       <img src={im01} alt="Референс" />
       <img src={im05} alt="Референс" />
       <img src={im02} alt="Референс" />

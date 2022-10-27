@@ -101,7 +101,32 @@
   }
   .works {
     width: 100%;
-    margin-top: 65px;
+    margin-top: 50px;
+    .moreInformation {
+      margin-bottom: 50px;
+      .open {
+        display: flex;
+        width: auto;
+        font-weight: bold;
+        align-items: center;
+        cursor: pointer;
+        svg {
+          margin-left: 10px;
+          height: 20px;
+          width: 20px;
+        }
+      }
+      .info {
+        background-color: rgba(255, 255, 255, 0.7);
+        &.hidden {
+          display: none;
+        }
+        p {
+          margin-top: 10px;
+          line-height: 115%;
+        }
+      }
+    }
     h2 {
       font-size: 30px;
       margin-bottom: 20px;
