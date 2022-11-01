@@ -16,6 +16,7 @@ export default function Village() {
   return (
     <div className="works">
       <img src={im00} alt="Референс" />
+
       <img src={im01} alt="Деревня викингов" />
       <img src={im02} alt="Деревня викингов" />
       <img src={im03} alt="Деревня викингов" />

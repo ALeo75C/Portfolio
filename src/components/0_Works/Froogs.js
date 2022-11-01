@@ -11,6 +11,13 @@ export default function Froogs() {
   return (
     <div className="works">
       <img src={im00} alt="Референс" />
+      <iframe
+        src="https://www.youtube.com/embed/zCtdO5sFN0Q"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
       <img src={im01} alt="Лягушачья сиеста" />
       <img src={im02} alt="Лягушачья сиеста" />
       <img src={im03} alt="Лягушачья сиеста" />

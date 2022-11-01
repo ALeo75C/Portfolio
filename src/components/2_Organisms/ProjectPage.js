@@ -10,6 +10,9 @@ import Hogwarts from "../0_Works/Hogwarts";
 import Village from "../0_Works/Village";
 import FAC from "../0_Works/FAC";
 import Fysci from "../0_Works/Fysci";
+import CS from "../0_Works/CS";
+import Mirea from "../0_Works/Mirea";
+import GW from "../0_Works/GW";
 
 import { FiChevronLeft } from "react-icons/fi";
 
@@ -56,6 +59,12 @@ const renderImages = (id) => {
       return <FAC />;
     case "fysci":
       return <Fysci />;
+    case "crowSwap":
+      return <CS />;
+    case "merea":
+      return <Mirea />;
+    case "genshinViki":
+      return <GW />;
     default:
       return "Работ нет";
   }

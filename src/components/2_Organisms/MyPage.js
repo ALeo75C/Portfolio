@@ -37,7 +37,7 @@ export default function MyPage(props) {
           </div>
           <div className="Work">
             <h3>Фриланс – дизайнер</h3>
-            <span>2020 – настоящее время</span>
+            <span>2019 – настоящее время</span>
             <p>
               {"Создаю визуализацию дляNинстаграмм-постов иNсторис нескольких аккаунтов.".replace(
                 /[N]/g,

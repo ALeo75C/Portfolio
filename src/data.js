@@ -10,6 +10,7 @@ const tecnology = [
   "Ruby on Rails",
   "SQL",
   "Python",
+  "Premier Pro",
 ];
 
 export const projects = {
@@ -34,14 +35,6 @@ export const projects = {
         url: "https://ru.calameo.com/read/0069584285808aefc9398",
       },
       {
-        type: "video",
-        url: "https://www.youtube.com/watch?v=ZquyAOgySkk",
-      },
-      {
-        type: "video",
-        url: "https://www.youtube.com/watch?v=-1idtg9Vry8",
-      },
-      {
         type: "GitHub",
         url: "https://github.com/HSEADC/fake-art-clicker",
       },
@@ -50,9 +43,9 @@ export const projects = {
   merea: {
     id: "merea",
     theme: "black",
-    title: "Merea",
+    title: "Mirea",
     text: [
-      "Merea-сервис поNподбору косметики. ВNэтом групповом проекте 2019-2020 года яNотвечала заNреализацию проекта. Сервис неNзапущен.",
+      "Mirea-сервис поNподбору косметики. ВNэтом групповом проекте 2019-2020 года яNотвечала заNреализацию проекта. Сервис неNзапущен.",
       "Сервис разбит наNдве части-пользовтельская иNбрендинговая. Для пользователей реализованы возможности регистрации, просмотра продукции иNстраницы брендов, отслеживание понравившихся продуктов, возможность оставлять комментарии. Бренды имеют теNже возможности, что иNобычные пользователи, ноNтакже могут добавлять новые иNредактировать уже существующие продукты, котрые принадлежатNим.",
       "ВNэтом проекте яNпознакомилась соNструктурами баз данных иNспроектировала схему поNкоторой предполагалось работа сервиса.",
       "Помимо «продуктовой части» куда входили описание, состав, аNтакже анализ состава поNнатуральности иNпрочим параметрам была внедрена часть «энциклопедии», вNкоторой планировалось публиковать статьи поNуходу заNсобой, разбирать мифы оNкосметике иNразбирать конкретные компоненты состава для изучения пользователями.",
@@ -61,12 +54,8 @@ export const projects = {
     tecnology: [tecnology[7], tecnology[4], tecnology[5]],
     links: [
       {
-        type: "video",
-        url: "https://github.com/HSEADC/fake-art-clicker",
-      },
-      {
         type: "GitHub",
-        url: "https://github.com/HSEADC/fake-art-clicker",
+        url: "https://github.com/ALeo75C/Detach",
       },
     ],
   },
@@ -83,12 +72,12 @@ export const projects = {
     tecnology: [tecnology[2], tecnology[3], tecnology[4], tecnology[5]],
     links: [
       {
-        type: "video",
-        url: "https://www.youtube.com/watch?v=ZquyAOgySkk",
+        type: "GitHub",
+        url: "https://github.com/GrSkiy/HSESwap",
       },
       {
         type: "GitHub",
-        url: "https://github.com/HSEADC/fake-art-clicker",
+        url: "https://github.com/ZakharDay/ADC-Swap",
       },
     ],
   },
@@ -104,7 +93,7 @@ export const projects = {
     links: [
       {
         type: "GitHub",
-        url: "https://github.com/HSEADC/fake-art-clicker",
+        url: "https://github.com/ALeo75C/GenshinWiki",
       },
     ],
   },
@@ -115,13 +104,8 @@ export const projects = {
       "ВNэтом проекте яNвоссоздовала 3DNсцену, основываясь наN2DNреференсе. Мне было интересно поработать сNперсонажами, ноNнеNзаостряя внимания наNанатомии. Хотелось сделать кого-нибудь простого иNочаровательного.",
     ],
     tag: [tags[2]],
-    tecnology: [tecnology[0], tecnology[1]],
-    links: [
-      {
-        type: "video",
-        url: "https://www.youtube.com/watch?v=zCtdO5sFN0Q&feature=youtu.be",
-      },
-    ],
+    tecnology: [tecnology[0], tecnology[1], tecnology[10]],
+    links: [],
   },
   hogwarts: {
     id: "hogwarts",
@@ -131,12 +115,7 @@ export const projects = {
     ],
     tag: [tags[2]],
     tecnology: [tecnology[0], tecnology[1]],
-    links: [
-      {
-        type: "video",
-        url: "https://www.youtube.com/watch?v=zCtdO5sFN0Q&feature=youtu.be",
-      },
-    ],
+    links: [],
   },
   village: {
     id: "village",
@@ -146,12 +125,7 @@ export const projects = {
     ],
     tag: [tags[2]],
     tecnology: [tecnology[0], tecnology[1]],
-    links: [
-      {
-        type: "video",
-        url: "https://www.youtube.com/watch?v=zCtdO5sFN0Q&feature=youtu.be",
-      },
-    ],
+    links: [],
   },
   fysci: {
     id: "fysci",

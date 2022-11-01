@@ -110,6 +110,24 @@
       background-image: url("../../assets/pages/fysci/cover.png");
       background-color: #f3f3f3;
     }
+    &.crowSwap {
+      background-image: url("../../assets/pages/cs/cover.png");
+      background-color: #0488ff;
+      h3 {
+        color: #ffffff;
+      }
+    }
+    &.merea {
+      background-image: url("../../assets/pages/mirea/cover.png");
+      background-color: #0a0202;
+      h3 {
+        color: #ffffff;
+      }
+    }
+    &.genshinViki {
+      background-image: url("../../assets/pages/gw/cover.png");
+      background-color: #ececec;
+    }
 
     .content {
       // display: flex;
