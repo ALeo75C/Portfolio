@@ -25,8 +25,8 @@ export default function CS() {
           Подробнее <IoChevronDownOutline />
         </div>
         <div className="info hidden">
-          <p>{projects.crowSwap.text[1].replace(/[N]/g, "\u00A0")}</p>
-          <p>{projects.crowSwap.text[2].replace(/[N]/g, "\u00A0")}</p>
+          <p>{projects.merea.text[1].replace(/[N]/g, "\u00A0")}</p>
+          <p>{projects.merea.text[2].replace(/[N]/g, "\u00A0")}</p>
         </div>
       </div>
       <img src={im00} alt="Референс" />

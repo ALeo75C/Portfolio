@@ -15,6 +15,7 @@ import Mirea from "../0_Works/Mirea";
 import GW from "../0_Works/GW";
 
 import { FiChevronLeft } from "react-icons/fi";
+import { BsGithub, BsBookHalf, BsLink } from "react-icons/bs";
 
 const renderTagCollections = (projectTags, tecnology) => {
   let projectTagsCollectionItems = [];
@@ -42,7 +43,17 @@ const renderTagCollections = (projectTags, tecnology) => {
 const renderLinks = (links) => {
   let linksItems = []
   links.forEach((link, i) => {
-    linksItems.push(<a target="_blank" href={link.url}>{link.type}</a>)
+    let icon = link.type
+    if (link.type == 'GitHub') {
+      icon = <BsGithub/>
+    } else if (link.type == 'product') {
+      icon = <BsLink/>
+
+    }else if (link.type == 'book') {
+      icon = <BsBookHalf/>
+
+    }
+    linksItems.push(<a target="_blank" href={link.url}>{icon}</a>)
   });
   return links.length > 0 ? <div className='linksCollection'>{linksItems}</div> : ''
 };

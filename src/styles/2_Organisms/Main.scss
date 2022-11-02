@@ -3,7 +3,7 @@
   .Filter {
     width: 100%;
     height: 20px;
-    margin: 90px 0 60px;
+    margin: 70px 0 60px;
     display: flex;
     justify-content: center;
     div {
@@ -12,6 +12,9 @@
       &.tag {
         &.false {
           padding-right: 24px;
+          ._color {
+            background-color: $white;
+          }
         }
         &.true {
           .content svg {
@@ -89,7 +92,7 @@
 
     &.fac {
       background-image: url("../../assets/pages/fac/cover.png");
-      background-color: #90a56d;
+      background-color: #222127;
       h3 {
         color: #ffffff;
       }

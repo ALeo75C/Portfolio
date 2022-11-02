@@ -2,6 +2,7 @@ import React from "react";
 
 import Skill from "../1_Molecules/Skill";
 import { IoGameController, IoHeadset, IoBookSharp } from "react-icons/io5";
+import { FaWindows, FaUbuntu } from "react-icons/fa";
 
 export default function MyPage(props) {
   // prettier-ignore
@@ -18,7 +19,7 @@ export default function MyPage(props) {
               <span>—</span> 05.08.1999
             </p>
             <p>
-              <span>—</span> za.iz.pr@yandex.kz
+              <span>—</span> za.iz.pr@yandex.ru
             </p>
             <p>
               <span>—</span> +7 (968) 996-30-92
@@ -55,17 +56,17 @@ export default function MyPage(props) {
             <Skill title="Figma" level={100} />
             <Skill title="HTML" level={90} />
             <Skill title="JS" level={80} />
-            <Skill title="Photoshop" level={60} />
+            <Skill title="Photoshop" level={70} />
             <Skill title="Ruby on Rails" level={40} />
+            <Skill title="Blender" level={60} />
             <Skill title="SQL" level={40} />
             <Skill title="Premier Pro" level={40} />
             <Skill title="Illustrator" level={30} />
             <Skill title="Python" level={30} />
           </div>
           <div className="Icons">
-            <IoGameController />
-            <IoHeadset />
-            <IoBookSharp />
+            <FaWindows />
+            <FaUbuntu />
           </div>
         </div>
       </div>

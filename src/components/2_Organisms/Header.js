@@ -6,12 +6,12 @@ const getLink = (location) => {
   href == "/Portfolio/lError_403"
     ? (link = (
         <Link className="_color" to="/Portfolio">
-          <p>lError_403</p>
+          <p>Инсафутдинова Валерия</p>
         </Link>
       ))
     : (link = (
         <Link to="/Portfolio/lError_403">
-          <p>lError_403</p>
+          <p>Инсафутдинова Валерия</p>
         </Link>
       ));
   return link;

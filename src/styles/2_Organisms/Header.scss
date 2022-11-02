@@ -9,15 +9,18 @@
     display: flex;
     position: relative;
     &.left {
-      a:hover {
-        background-color: $orange;
+      a {
+        width: 120px;
+        &:hover {
+          background-color: $orange;
+        }
       }
     }
     ._color {
       margin: 0;
       position: absolute;
       width: auto;
-      height: 100%;
+      // height: 100%;
       background-color: $green;
     }
 
@@ -28,7 +31,7 @@
           content: "e-mail";
         }
         &:hover:after {
-          content: "za.iz.pr@yandex.kz";
+          content: "za.iz.pr@yandex.ru";
           background-color: $orange;
         }
       }
