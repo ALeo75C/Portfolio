@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <div className="Footer">
       <p>Москва</p>
-      <p>2022г</p>
+      <p>{new Date().getFullYear()} год</p>
     </div>
   );
 }

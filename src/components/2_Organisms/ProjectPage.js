@@ -13,6 +13,7 @@ import Fysci from "../0_Works/Fysci";
 import CS from "../0_Works/CS";
 import Mirea from "../0_Works/Mirea";
 import GW from "../0_Works/GW";
+import Books from "../0_Works/Books";
 
 import { FiChevronLeft } from "react-icons/fi";
 import { BsGithub, BsBookHalf, BsLink } from "react-icons/bs";
@@ -21,10 +22,10 @@ const renderTagCollections = (projectTags, tecnology) => {
   let projectTagsCollectionItems = [];
   let tecnologyCollectionItems = [];
   projectTags.forEach((tag, i) => {
-    projectTagsCollectionItems.push(<div className="tag">{tag}</div>);
+    projectTagsCollectionItems.push(<div className="tag" key={`tecnology_${i}`}>{tag}</div>);
   });
   tecnology.forEach((tag, i) => {
-    tecnologyCollectionItems.push(<div className="tag">{tag}</div>);
+    tecnologyCollectionItems.push(<div className="tag" key={`tecnology_${i}`}>{tag}</div>);
   });
   return (
     <div className="tags">
@@ -45,15 +46,15 @@ const renderLinks = (links) => {
   links.forEach((link, i) => {
     let icon = link.type
     if (link.type == 'GitHub') {
-      icon = <BsGithub/>
+      icon = <BsGithub key={i}/>
     } else if (link.type == 'product') {
-      icon = <BsLink/>
+      icon = <BsLink key={i}/>
 
     }else if (link.type == 'book') {
-      icon = <BsBookHalf/>
+      icon = <BsBookHalf key={i}/>
 
     }
-    linksItems.push(<a target="_blank" href={link.url}>{icon}</a>)
+    linksItems.push(<a key={`link_${i}`} target="_blank" href={link.url}>{icon}</a>)
   });
   return links.length > 0 ? <div className='linksCollection'>{linksItems}</div> : ''
 };
@@ -76,6 +77,8 @@ const renderImages = (id) => {
       return <Mirea />;
     case "genshinViki":
       return <GW />;
+    case "bookSearch":
+      return <Books />;
     default:
       return "Работ нет";
   }

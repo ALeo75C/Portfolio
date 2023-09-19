@@ -2,7 +2,7 @@ export const tags = ["Разработка", "Дизайн", "3D"];
 const tecnology = [
   "Blender",
   "Photoshop",
-  "react",
+  "react", //
   "redux",
   "HTML",
   "CSS|SCSS",
@@ -11,6 +11,7 @@ const tecnology = [
   "SQL",
   "Python",
   "Premier Pro",
+  'Vue'
 ];
 
 export const projects = {
@@ -37,6 +38,25 @@ export const projects = {
       {
         type: "GitHub",
         url: "https://github.com/HSEADC/fake-art-clicker",
+      },
+    ],
+  },
+  bookSearch: {
+    id: "bookSearch",
+    theme: "black",
+    title: "Поиск по Google книгам",
+    text: [
+      "Небольшой проект по созданию пользовательского интерфейса для взамодействия с api Google Books. Во время разработки я использовала React для отрисовки данных, Redux для хранения данных, а также благодаря хранению ключевых данных для осуществления поиска в LocalStorage браузера результаты поиска сохраняются даже после перезагрузки страницы.",
+    ],
+    tag: [tags[0], tags[1]],
+    tecnology: [tecnology[2], tecnology[3], tecnology[4], tecnology[5]],
+    links: [
+      {
+        type: "product",
+        url: "https://aleo75c.github.io/google_api_search/",
+      }, {
+        type: "GitHub",
+        url: "https://github.com/ALeo75C/google_api_search",
       },
     ],
   },
@@ -95,6 +115,16 @@ export const projects = {
       },
     ],
   },
+  fysci: {
+    id: "fysci",
+    title: "Fysci",
+    text: [
+      "Небольшой проектв котором яNразработала прототип сервиса наNскорую руку (общее прототипирование иNвизуализация занала неNбольше 2-3Nчасов) поNпоиску научных лабораторий для магистов, аNтакже его презентацию.",
+    ],
+    tag: [tags[1]],
+    tecnology: [tecnology[6]],
+    links: [],
+  },
   frogs: {
     id: "frogs",
     title: "Болотная сиеста",
@@ -123,16 +153,6 @@ export const projects = {
     ],
     tag: [tags[2]],
     tecnology: [tecnology[0], tecnology[1]],
-    links: [],
-  },
-  fysci: {
-    id: "fysci",
-    title: "Fysci",
-    text: [
-      "Небольшой проектв котором яNразработала прототип сервиса наNскорую руку (общее прототипирование иNвизуализация занала неNбольше 2-3Nчасов) поNпоиску научных лабораторий для магистов, аNтакже его презентацию.",
-    ],
-    tag: [tags[1]],
-    tecnology: [tecnology[6]],
     links: [],
   },
 };

@@ -86,7 +86,7 @@
     box-shadow: 0px 0px 20px 0px #00000014;
     position: relative;
     cursor: pointer;
-    background-position: center;
+    background-position: right;
     background-size: auto;
     background-repeat: no-repeat;
 
@@ -96,6 +96,10 @@
       h3 {
         color: #ffffff;
       }
+    }
+    &.bookSearch {
+      background-image: url("../../assets/pages/book/cover.png");
+      background-color: #F3F3F3;
     }
     &.frogs {
       background-image: url("../../assets/pages/frogs/cover.png");
